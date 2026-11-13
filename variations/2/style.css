@@ -1,0 +1,462 @@
+@font-face {
+    font-family: 'ACC_BAL_Homepage_25_Allura';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/allura/v23/9oRPNYsQpS4zjuA_iwgW.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+2019, U+2018, U+00B7;
+}
+
+body.ACC_BAL_Homepage_25 section.ACC_BAL_Homepage_25 {
+    --acc_bal_homepage_25-bg: #FFF1DE;
+    --acc_bal_homepage_25-ink: #000000;
+    --acc_bal_homepage_25-gold: #C3972B;
+    --acc_bal_homepage_25-muted: #4A4A4A;
+    --acc_bal_homepage_25-badge-bg: #11100C;
+    --acc_bal_homepage_25-media-w: 390px;
+    --acc_bal_homepage_25-gap: 80px;
+    --acc_bal_homepage_25-pad-block: 100px;
+
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: var(--acc_bal_homepage_25-pad-block) 0;
+    background: var(--acc_bal_homepage_25-bg);
+    border: 0;
+    font-family: Poppins, sans-serif;
+    color: var(--acc_bal_homepage_25-ink);
+    text-align: left;
+}
+
+body.ACC_BAL_Homepage_25 section.ACC_BAL_Homepage_25 * {
+    box-sizing: border-box;
+}
+
+body.ACC_BAL_Homepage_25 section.ACC_BAL_Homepage_25 {
+    overflow: hidden;
+}
+
+body.ACC_BAL_Homepage_25 section.ACC_BAL_Homepage_25 :where(p, h2, ul, li) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    font-family: inherit;
+    text-align: inherit;
+    text-transform: none;
+}
+
+body.ACC_BAL_Homepage_25 div.ACC_BAL_Homepage_25__row {
+    display: flex;
+    align-items: center;
+    gap: var(--acc_bal_homepage_25-gap);
+    width: min(1000px, 100% - 80px);
+    margin: 0 auto;
+    padding: 0;
+}
+
+body.ACC_BAL_Homepage_25 div.ACC_BAL_Homepage_25__media {
+    position: relative;
+    flex: 0 0 var(--acc_bal_homepage_25-media-w);
+    width: var(--acc_bal_homepage_25-media-w);
+    max-width: 100%;
+    aspect-ratio: 390 / 439;
+    margin: 0;
+    padding: 0;
+}
+
+body.ACC_BAL_Homepage_25 img.ACC_BAL_Homepage_25__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0 150px 0 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+body.ACC_BAL_Homepage_25 iframe.ACC_BAL_Homepage_25__frame {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0 150px 0 150px;
+}
+
+body.ACC_BAL_Homepage_25 div.ACC_BAL_Homepage_25__media--playing img.ACC_BAL_Homepage_25__img,
+body.ACC_BAL_Homepage_25 div.ACC_BAL_Homepage_25__media--playing button.ACC_BAL_Homepage_25__play,
+body.ACC_BAL_Homepage_25 div.ACC_BAL_Homepage_25__media--playing span.ACC_BAL_Homepage_25__badge {
+    display: none;
+}
+
+body.ACC_BAL_Homepage_25 button.ACC_BAL_Homepage_25__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    min-height: 44px;
+    margin: 0;
+    padding: 9px 18px 9px 10px;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border: 0;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    color: var(--acc_bal_homepage_25-ink);
+    font-family: inherit;
+    cursor: pointer;
+}
+
+body.ACC_BAL_Homepage_25 span.ACC_BAL_Homepage_25__play-icon {
+    display: block;
+    flex: 0 0 26px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #000000;
+    position: relative;
+}
+
+body.ACC_BAL_Homepage_25 span.ACC_BAL_Homepage_25__play-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin: -5px 0 0 -3px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid #C3972B;
+}
+
+body.ACC_BAL_Homepage_25 span.ACC_BAL_Homepage_25__play-label {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: var(--acc_bal_homepage_25-ink);
+    white-space: nowrap;
+}
+
+body.ACC_BAL_Homepage_25 span.ACC_BAL_Homepage_25__badge {
+    z-index: 3;
+    display: block;
+    width: 104px;
+    height: 104px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    background: var(--acc_bal_homepage_25-badge-bg);
+    position: absolute;
+    right: -39px;
+    bottom: -23px;
+}
+
+body.ACC_BAL_Homepage_25 svg.ACC_BAL_Homepage_25__badge-svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    animation: ACC_BAL_Homepage_25_spin 22s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+body.ACC_BAL_Homepage_25 text.ACC_BAL_Homepage_25__badge-text {
+    fill: var(--acc_bal_homepage_25-gold);
+    font-family: Poppins, sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+body.ACC_BAL_Homepage_25 svg.ACC_BAL_Homepage_25__badge-star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -12px;
+    fill: none;
+    stroke: var(--acc_bal_homepage_25-gold);
+    stroke-width: 1.5;
+}
+
+@keyframes ACC_BAL_Homepage_25_spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+body.ACC_BAL_Homepage_25 div.ACC_BAL_Homepage_25__text {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body.ACC_BAL_Homepage_25 p.ACC_BAL_Homepage_25__kicker {
+    display: inline-block;
+    margin: 0 0 14px;
+    padding: 6px 14px;
+    background: #FFFFFF;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #815205;
+}
+
+body.ACC_BAL_Homepage_25 h2.ACC_BAL_Homepage_25__heading {
+    margin: 0 0 16px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.35px;
+    color: var(--acc_bal_homepage_25-ink);
+}
+
+body.ACC_BAL_Homepage_25 span.ACC_BAL_Homepage_25__script {
+    display: block;
+    margin-top: 2px;
+    font-family: 'ACC_BAL_Homepage_25_Allura', cursive;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0;
+    color: var(--acc_bal_homepage_25-ink);
+}
+
+body.ACC_BAL_Homepage_25 p.ACC_BAL_Homepage_25__body {
+    margin: 0 0 26px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.35px;
+    color: var(--acc_bal_homepage_25-ink);
+}
+
+body.ACC_BAL_Homepage_25 strong.ACC_BAL_Homepage_25__body-strong {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: var(--acc_bal_homepage_25-ink);
+}
+
+body.ACC_BAL_Homepage_25 ul.ACC_BAL_Homepage_25__steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin: 0 0 26px;
+}
+
+body.ACC_BAL_Homepage_25 li.ACC_BAL_Homepage_25__step {
+    margin: 0;
+    padding: 0;
+}
+
+body.ACC_BAL_Homepage_25 span.ACC_BAL_Homepage_25__step-n {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 8px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    color: var(--acc_bal_homepage_25-gold);
+}
+
+body.ACC_BAL_Homepage_25 span.ACC_BAL_Homepage_25__step-n::after {
+    content: "";
+    flex: 1 1 auto;
+    height: 1px;
+    background: var(--acc_bal_homepage_25-gold);
+    opacity: 0.55;
+}
+
+body.ACC_BAL_Homepage_25 p.ACC_BAL_Homepage_25__step-title {
+    margin: 0 0 5px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: var(--acc_bal_homepage_25-ink);
+}
+
+body.ACC_BAL_Homepage_25 p.ACC_BAL_Homepage_25__step-copy {
+    margin: 0;
+    font-size: 11.5px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: var(--acc_bal_homepage_25-muted);
+}
+
+body.ACC_BAL_Homepage_25 div.ACC_BAL_Homepage_25__sign {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 0 26px;
+}
+
+body.ACC_BAL_Homepage_25 p.ACC_BAL_Homepage_25__sign-name {
+    flex: 0 0 auto;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--acc_bal_homepage_25-ink);
+}
+
+body.ACC_BAL_Homepage_25 p.ACC_BAL_Homepage_25__sign-role {
+    margin: 0;
+    padding-left: 14px;
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.2px;
+    color: var(--acc_bal_homepage_25-muted);
+    max-width: 195px;
+}
+
+body.ACC_BAL_Homepage_25 a.ACC_BAL_Homepage_25__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 48px;
+    margin: 0;
+    padding: 14px 26px;
+    background: var(--acc_bal_homepage_25-ink);
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+body.ACC_BAL_Homepage_25 a.ACC_BAL_Homepage_25__cta:hover {
+    background: #2B2B2B;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+body.ACC_BAL_Homepage_25 span.ACC_BAL_Homepage_25__cta-label {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+body.ACC_BAL_Homepage_25 svg.ACC_BAL_Homepage_25__cta-arrow {
+    display: block;
+    flex: 0 0 22px;
+    width: 22px;
+    height: 13px;
+    color: inherit;
+}
+
+@media screen and (max-width: 740px) {
+    body.ACC_BAL_Homepage_25 section.ACC_BAL_Homepage_25 {
+        --acc_bal_homepage_25-pad-block: 25px;
+        --acc_bal_homepage_25-gap: 22px;
+    }
+
+    body.ACC_BAL_Homepage_25 div.ACC_BAL_Homepage_25__row {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: calc(100% - 56px);
+        gap: 10px;
+    }
+
+    body.ACC_BAL_Homepage_25 div.ACC_BAL_Homepage_25__media {
+        order: 2;
+        flex: 0 0 auto;
+        width: 100%;
+        align-self: center;
+    }
+
+    body.ACC_BAL_Homepage_25 div.ACC_BAL_Homepage_25__text {
+        display: contents;
+    }
+
+    body.ACC_BAL_Homepage_25 p.ACC_BAL_Homepage_25__kicker {
+        order: 0;
+        align-self: center;
+        margin: 0;
+    }
+
+    body.ACC_BAL_Homepage_25 h2.ACC_BAL_Homepage_25__heading {
+        order: 1;
+        margin: 0;
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    body.ACC_BAL_Homepage_25 span.ACC_BAL_Homepage_25__script {
+        font-size: 40px;
+        line-height: 38px;
+    }
+
+    body.ACC_BAL_Homepage_25 p.ACC_BAL_Homepage_25__body {
+        order: 3;
+        margin: 15px 0 5px 0px;
+    }
+
+    body.ACC_BAL_Homepage_25 ul.ACC_BAL_Homepage_25__steps {
+        order: 4;
+        gap: 12px;
+        margin: 0 0 20px;
+    }
+
+    body.ACC_BAL_Homepage_25 div.ACC_BAL_Homepage_25__sign {
+        order: 5;
+        margin: 0 0 20px;
+    }
+
+    body.ACC_BAL_Homepage_25 a.ACC_BAL_Homepage_25__cta {
+        order: 6;
+        width: 100%;
+    }
+
+    body.ACC_BAL_Homepage_25 span.ACC_BAL_Homepage_25__badge {
+        width: 86px;
+        height: 86px;
+        position: absolute;
+        right: -18px;
+        bottom: -11px;
+    }
+
+    body.ACC_BAL_Homepage_25 p.ACC_BAL_Homepage_25__step-copy {
+        font-size: 10.5px;
+        line-height: 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body.ACC_BAL_Homepage_25 svg.ACC_BAL_Homepage_25__badge-svg {
+        animation: none;
+    }
+}
